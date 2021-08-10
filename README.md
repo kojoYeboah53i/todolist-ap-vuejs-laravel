@@ -5,18 +5,26 @@
 ## todolist-vuejs-laravel
  A todolist app with vue.js frontend and laravel backend
  
+## Demo
 
+- **[demo](https://codjosft-rest-api.herokuapp.com/)**
 
 
 ## Installation
-Run composer install from your terminal (make sure composer is install on your local machine) <br>
-Run npm install from your terminal
-Import attached .SQL File directly - Find it in this directory database/Todolist.sql <br>
 
-## Deployment
-Clone the repo or download as a zip <br>
-Extract it into xampp/htdocs/ or opt/lampp/htdocs/ or var/www/html/<br>
-Create a database named Todolist <br>
+  To run this locally, you'll need to clone the repository and install the dependencies:
 
-Access it directly on web browser by typing http://Your Server Name Or IP Address/TodolistApp/ <br>
-You can also start the application by running `php artisan serve` copy the URL (http://127.0.0.1:8000) paste it on your browser
+- cd into your directory
+- run `composer install`
+- run `php artisan key:generate`
+- run `php artisan migrate`
+- run `php artisan db:seed`
+- run `php artisan serve`
+- open browser and go to `http://localhost:8000`
+- make sure you edit `.env.example` file
+- edit `.env` and configure your database connection 
+
+## Contributing
+
+[Isaac Kojo Yeboah](https://github.com/kojoyeboah53i).
+
