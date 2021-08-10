@@ -1,5 +1,5 @@
 <div style="text-align:center">
-<img src="./screenshot.PNG" alt="screenshot" width="800" height="700"></div>
+<img src="https://raw.githubusercontent.com/kojoYeboah53i/Todolist-vuejs/master/screenshot.PNG?token=AGGPU2N462TI23DFV5KBGQLBDOXVM" alt="screenshot" width="800" height="700"></div>
 
 
 ## todolist-vuejs-laravel
