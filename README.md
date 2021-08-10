@@ -19,6 +19,8 @@
 - run `php artisan key:generate`
 - run `php artisan migrate`
 - run `php artisan db:seed`
+- run `npm install`
+- run `npm run dev`
 - run `php artisan serve`
 - open browser and go to `http://localhost:8000`
 - make sure you edit `.env.example` file
