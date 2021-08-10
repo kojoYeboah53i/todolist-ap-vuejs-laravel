@@ -7,7 +7,7 @@
  
 ## Demo
 
-- **[demo](https://codjosft-rest-api.herokuapp.com/)**
+- **[demo](https://vuejs-todolist-app-laravel.herokuapp.com/)**
 
 
 ## Installation
