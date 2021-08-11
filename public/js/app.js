@@ -26662,7 +26662,7 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
   id: "title"
-}, " Add Todo List", -1
+}, "Add Todo List", -1
 /* HOISTED */
 );
 
@@ -26928,7 +26928,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.todoListContainer[data-v-27d9b80a] {\r\n  text-align: center;\r\n  width: 350px;\r\n  margin: auto;\r\n  position:relative;\r\n  top: 10px;\r\n  border-radius: 35px;\r\n  box-shadow: 0 2px 10px 1px rgba(44, 39, 39, 0.3);\n}\n.heading[data-v-27d9b80a] {\r\n  background: #e6e6e6;\r\n  padding: 10px;\r\n  border-radius: 35px  35px 0 0;\r\n  background: #062723;\n}\n#title[data-v-27d9b80a] {\r\n  margin-top: 100px;\r\n  margin-bottom: 0;;\r\n  text-align: center;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.todoListContainer[data-v-27d9b80a] {\r\n  text-align: center;\r\n  width: 350px;\r\n  margin: auto;\r\n  position: relative;\r\n  top: 10px;\r\n  border-radius: 35px;\r\n  box-shadow: 0 2px 10px 1px rgba(44, 39, 39, 0.3);\n}\n.heading[data-v-27d9b80a] {\r\n  background: #e6e6e6;\r\n  padding: 10px;\r\n  border-radius: 35px 35px 0 0;\r\n  background: #062723;\n}\n#title[data-v-27d9b80a] {\r\n  margin-top: 100px;\r\n  margin-bottom: 0;\r\n  text-align: center;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
