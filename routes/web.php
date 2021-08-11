@@ -1,9 +1,7 @@
 <?php
 
-use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
-use App\Http\Controllers\ChatController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,56 +13,6 @@ use App\Http\Controllers\ChatController;
 |
 */
 
-
-/*
-   this is how to render inertia template views from controller
-// use Inertia\Inertia;
-
-// class CoreController extends Controller
-// {
-//     public function index()
-//     {
-//         return Inertia::render('Admin/Index');
-//     }
-// }
-
-*/
-
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return view('index');
 });
-
-
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->name('dashboard');
-
-Route::middleware(['auth:sanctum'])->get('/chat', function () {
-    return Inertia::render('Chat/container');
-})->name('chat');
-
-Route::middleware(['auth:sanctum'])->get('/test-chat', function () {
-    return Inertia::render('Chat/test');
-})->name('test-chat');
-
-
-
-//Chatroom
-Route::middleware('auth:sanctum')->get('chat/rooms', [ChatController::class, 'rooms']);
-Route::middleware('auth:sanctum')->get('chat/room/{roomId}', [ChatController::class, 'messages']);
-Route::middleware('auth:sanctum')->post('chat/roommessage/{roomId}', [ChatController::class, 'newMessage']);
-
-//chat
-Route::get('/chatpage', function(){
-    return view('chat.index');
-});
-
-Route::get('/stats', function(){
-    return Inertia::render('Stats');
-})->name('stats');

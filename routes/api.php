@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\ChatController;
+use App\Http\Controllers\ItemController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\ItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,20 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
 
-//chat
-Route::get('/chat', [ChatController::class, 'index']);
+Route::get('/items', [ItemController::class, 'index']);
 
-Route::prefix('/chat')->group( function () {
-  Route::post('/store', [ChatController::class, 'store']);
-  Route::put('/{id}', [ChatController::class, 'update']);
-  Route::delete('/{id}', [ChatController::class, 'destroy']);
-  Route::get('/special/{id}', [ChatController::class, 'messages']);
-  Route::post('/special/{id}', [ChatController::class, 'newMessage']);
-
-  }
+Route::prefix('/item')->group( function () {
+    Route::post('/store', [ItemController::class, 'store']);
+    Route::put('/{id}', [ItemController::class, 'update']);
+    Route::delete('/{id}', [ItemController::class, 'destroy']);
+  
+    }
 );
